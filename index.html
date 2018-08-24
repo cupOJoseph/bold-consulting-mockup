@@ -1,0 +1,433 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      My Landing Page
+    </title>
+    <meta name="description" content="This description shows when you share a link to your page on Facebook or Twitter."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet"/>
+  </head>
+  <body>
+    <div style="font-family:&#x27;Roboto&#x27;, Arial, serif;font-size:15px">
+      <div>
+        <header class="header" style="color:#fff;font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logo" style="font-weight:700">
+              ABC Consulting
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <a href="/pricing" class="btn btn--c btn--plain" style="color:rgba(144,19,254,1)">
+                Services
+              </a>
+              <a href="" class="btn btn--c btn--plain" style="color:rgba(144,19,254,1)">
+                Blog
+              </a>
+              <a href="" class="btn btn--c btn--plain" style="color:rgba(144,19,254,1)">
+                Case Studies
+              </a>
+              <div class="header__navCtas">
+                <a href="/signup" class="btn btn--c btn--primary" style="color:rgba(255,255,255,1);background-color:rgba(144,19,254,1)">
+                  Login
+                </a>
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:rgba(255,255,255,1);background-color:rgba(144,19,254,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+                <li>
+                  <a href="/pricing" class="btn btn--c btn--plain" style="color:rgba(144,19,254,1)">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="btn btn--c btn--plain" style="color:rgba(144,19,254,1)">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="btn btn--c btn--plain" style="color:rgba(144,19,254,1)">
+                    Case Studies
+                  </a>
+                </li>
+                <li>
+                  <a href="/signup" class="btn btn--c btn--primary" style="color:rgba(255,255,255,1);background-color:rgba(144,19,254,1)">
+                    Login
+                  </a>
+                </li>
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-image:url(assets/lidy6sth.jpg?w=1300&amp;h=800&amp;q=50&amp;fit=crop)">
+          <div class="wr heroWr heroWr--center">
+            <div class="heroWrapper heroWrapper--center">
+              <h1 class="hero__title" style="color:#fff;font-weight:700;font-family:&#x27;Roboto Condensed&#x27;, sans-serif">
+                It&#x27;s an wild universe.
+              </h1>
+              <h2 class="hero__subtitle" style="color:#fff;font-weight:400">
+                Let us help you make sense of it.
+              </h2>
+              <div class="hero__ctas">
+                <a href="/login" class="btn btn--c btn--primary btn--large" style="color:rgba(255,255,255,1);background-color:rgba(144,19,254,1)">
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+          <div class="divider">
+            <svg viewBox="0 0 1695 57" preserveAspectRatio="none">
+              <path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1 1395.8.9 1556.7 8.3 1695 23v34H0V23z" fill="rgba(144,19,254,1)" fill-rule="evenodd">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(144,19,254,1)">
+          <div class="wr">
+            <div class="features features--trio features--center">
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(https://landen.imgix.net/defaults/icons/feather/briefcase.svg?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#fff;font-weight:700">
+                  Hard Problems
+                </h3>
+                <p class="feature__description" style="color:#fff;font-weight:400">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                </p>
+              </div>
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(https://landen.imgix.net/defaults/icons/feather/activity.svg?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#fff;font-weight:700">
+                  Unexpected Solutions
+                </h3>
+                <p class="feature__description" style="color:#fff;font-weight:400">
+                  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+              </div>
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(https://landen.imgix.net/defaults/icons/feather/box.svg?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#fff;font-weight:700">
+                  Sustainable Ideas
+                </h3>
+                <p class="feature__description" style="color:#fff;font-weight:400">
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:rgba(0,0,0,1);font-weight:700;font-family:&#x27;Roboto Condensed&#x27;, sans-serif">
+              How it works
+            </h2>
+            <div class="zigzag">
+              <div class="zigzagItem zigzagItem--right">
+                <div class="zigzagItem__content">
+                  <span class="zigzagItem__number" style="color:rgba(0,0,0,1);font-weight:400">
+                    #1
+                  </span>
+                  <h3 class="zigzagItem__title" style="color:rgba(0,0,0,1);font-weight:700">
+                    Step one
+                  </h3>
+                  <p class="zigzagItem__text" style="color:rgba(0,0,0,1);font-weight:400">
+                    We work with our clients to find their largest pain points.
+                  </p>
+                </div>
+                <div class="zigzagItem__graphic">
+                  <img src="https://landen.imgix.net/defaults/undraw/coworking.svg" class="media media--image" srcSet="https://landen.imgix.net/defaults/undraw/coworking.svg 2x"/>
+                </div>
+              </div>
+              <div class="zigzagItem zigzagItem--left">
+                <div class="zigzagItem__graphic">
+                  <img src="https://landen.imgix.net/defaults/undraw/report.svg" class="media media--image" srcSet="https://landen.imgix.net/defaults/undraw/report.svg 2x"/>
+                </div>
+                <div class="zigzagItem__content">
+                  <span class="zigzagItem__number" style="color:rgba(0,0,0,1);font-weight:400">
+                    #2
+                  </span>
+                  <h3 class="zigzagItem__title" style="color:rgba(0,0,0,1);font-weight:700">
+                    Step two
+                  </h3>
+                  <p class="zigzagItem__text" style="color:rgba(0,0,0,1);font-weight:400">
+                    We use our combined 1,000,000 years in this industry to develop creative solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="zigzagItem zigzagItem--right">
+                <div class="zigzagItem__content">
+                  <span class="zigzagItem__number" style="color:rgba(0,0,0,1);font-weight:400">
+                    #3
+                  </span>
+                  <h3 class="zigzagItem__title" style="color:rgba(0,0,0,1);font-weight:700">
+                    Step three
+                  </h3>
+                  <p class="zigzagItem__text" style="color:rgba(0,0,0,1);font-weight:400">
+                    We implement the solution with a focus on future sustainability of the new system.
+                  </p>
+                  <a href="/start" class="btn btn--c btn--primary" style="color:rgba(255,255,255,1);background-color:rgba(144,19,254,1)">
+                    Get Started
+                  </a>
+                </div>
+                <div class="zigzagItem__graphic">
+                  <img src="https://landen.imgix.net/defaults/undraw/makeitrain.svg" class="media media--image" srcSet="https://landen.imgix.net/defaults/undraw/makeitrain.svg 2x"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:rgba(144,19,254,1)">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:#fff;font-weight:700;font-family:&#x27;Roboto Condensed&#x27;, sans-serif">
+              We&#x27;ve worked with the best
+            </h2>
+            <div class="logos">
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net/defaults/logos/entrepreneur.svg)">
+              </div>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net/defaults/logos/forbes.svg)">
+              </div>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net/defaults/logos/fortune.svg)">
+              </div>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net/defaults/logos/inc500.svg)">
+              </div>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net/defaults/logos/huffingtonpost.svg)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:rgba(0,0,0,1);font-weight:700;font-family:&#x27;Roboto Condensed&#x27;, sans-serif">
+              Contact us
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(0,0,0,1);font-weight:400">
+              Got any questions? Don&#x27;t hesitate to reach out.
+            </h3>
+            <form class="contact" id="contact" data-siteid="dmidcsbuulni">
+              <div class="contact__item">
+                <label style="color:rgba(0,0,0,1);font-weight:700">
+                  Full Name
+                </label>
+                <input type="text" id="contactName" placeholder="Jane Doe" style="color:rgba(0,0,0,1);font-weight:400"/>
+              </div>
+              <div class="contact__row">
+                <div class="contact__item">
+                  <label style="color:rgba(0,0,0,1);font-weight:700">
+                    Email Address
+                  </label>
+                  <input type="email" id="contactEmail" placeholder="jane.doe@mail.com" style="color:rgba(0,0,0,1);font-weight:400"/>
+                </div>
+                <div class="contact__item">
+                  <label style="color:rgba(0,0,0,1);font-weight:700">
+                    Phone (Optional)
+                  </label>
+                  <input type="text" id="contactPhone" placeholder="(123) 456-7890" style="color:rgba(0,0,0,1);font-weight:400"/>
+                </div>
+              </div>
+              <div class="contact__item">
+                <label style="color:rgba(0,0,0,1);font-weight:700">
+                  Your Message
+                </label>
+                <textarea id="contactMessage" style="color:rgba(0,0,0,1);font-weight:400">
+                </textarea>
+              </div>
+              <div id="contactError" class="contact__error">
+              </div>
+              <button id="contactSubmit" class="btn btn--c btn--primary btn--large" style="color:rgba(255,255,255,1);background-color:rgba(144,19,254,1)">
+                Send Message
+              </button>
+            </form>
+            <script>
+              (function() {
+                function bindForm() {
+                  var form = document.getElementById('contact');
+                  form.addEventListener('submit', handleSubmit);
+              
+                  var btn = document.getElementById('contactSubmit');
+                  btn.addEventListener('click', handleSubmit);
+                }
+              
+                function handleSubmit(e) {
+                  e.preventDefault();
+                  console.log('submitted form');
+              
+                  var data = {
+                    path: window.location.pathname,
+                    siteId: document.getElementById('contact').getAttribute('data-siteid'),
+                    name: document.getElementById('contactName').value,
+                    email: document.getElementById('contactEmail').value,
+                    phone: document.getElementById('contactPhone').value,
+                    message: document.getElementById('contactMessage').value
+                  };
+              
+                  if (!validateData(data)) {
+                    return;
+                  }
+              
+                  document.getElementById('contactSubmit').classList.add('btn--loading');
+              
+                  sendData(data);
+                }
+              
+                function sendData(data) {
+                  var request = new XMLHttpRequest();
+                  request.open('POST', 'https://api.landen.co/public/contact', true);
+                  request.setRequestHeader(
+                    'Content-Type',
+                    'application/x-www-form-urlencoded; charset=UTF-8'
+                  );
+                  request.send(JSON.stringify(data));
+              
+                  request.onload = function() {
+                    document.getElementById('contactSubmit').classList.remove('btn--loading');
+                    if (this.status >= 200 && this.status < 400) {
+                      // success handling
+                      clearData();
+                      document.getElementById('contactSubmit').classList.add('btn--success');
+                      setTimeout(function() {
+                        document
+                          .getElementById('contactSubmit')
+                          .classList.remove('btn--success');
+                      }, 2000);
+                    } else {
+                      console.log('error');
+                    }
+                  };
+              
+                  request.onerror = function() {
+                    document.getElementById('contactError').innerText =
+                      'A network error occured. Please make sure you are connected to the internet.';
+                  };
+                }
+              
+                function clearData() {
+                  document.getElementById('contactName').value = '';
+                  document.getElementById('contactEmail').value = '';
+                  document.getElementById('contactPhone').value = '';
+                  document.getElementById('contactMessage').value = '';
+                }
+              
+                function validateData(data) {
+                  var error = false;
+                  if (data.name.length < 2) {
+                    error = 'Please enter your name';
+                  } else if (data.email.length < 6) {
+                    error = 'Please enter your email address';
+                  } else if (data.message.length < 4) {
+                    error = 'Please enter a message';
+                  }
+              
+                  if (error) {
+                    document.getElementById('contactError').innerText = error;
+                  } else {
+                    document.getElementById('contactError').innerText = '';
+                  }
+              
+                  return error === false;
+                }
+                bindForm();
+              })();
+            </script>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:rgba(144,19,254,1)">
+          <div class="wr">
+            <div class="footer" style="color:#fff;font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  © 2019 ABC Consulting 
+                </span>
+              </div>
+              <nav class="footer__linkRow">
+                <a href="">
+                  Careers
+                </a>
+                <a href="">
+                  Investors
+                </a>
+                <a href="">
+                  Blog
+                </a>
+                <a href="">
+                  Case Studies
+                </a>
+              </nav>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
